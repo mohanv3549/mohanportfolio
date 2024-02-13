@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="port.css">
+<body>
+    <nav>
+    <div class="navbar">
+    <div class="logo">
+      <h1>PORTFOLIO</h1></div>
+    <UL>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="openabout.html">ABOUT ME</a></li>
+        <li><a href="vw.html">VIEW PROJECTS</a></li>
+        <li><a href="contact.html">CONTACT ME</a></li>
+    </UL>
+    </div>
+    </nav>
+    <div >
+        <img src="outline-male-programmer-having-online-meeting.gif" alt="" class="image">
+    </div>
+    <div class="con">
+        <p  class="con2"><span id="demo" class="highlight2"></span></p>
+    </div>
+    <div>
+      <button><a href="mohanresume.pdf">Download CV</a></button>
+    </div>
+</body>
+<script>
+  var i = 0;
+var txt = "Hello! I am Mohan Vignesh, a passionate and driven individual currently studying at SRM University. My expertise lies in web development and Python programming."; /* The text */
+var speed = 50; /* The speed/duration of the effect in milliseconds */
+typeWriter()
+function typeWriter() {
+if (i < txt.length) {
+  document.getElementById("demo").innerHTML += txt.charAt(i);
+  i++;
+  setTimeout(typeWriter, speed);
+}
+}
+</script>
+</html>
